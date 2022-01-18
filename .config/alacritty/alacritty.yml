@@ -93,13 +93,13 @@ window:
   # and `light`. Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
   #history: 10000
 
   # Scrolling distance multiplier.
-  #multiplier: 3
+  multiplier: 1
 
 # Font configuration
 font:
@@ -111,21 +111,21 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Ubuntu Mono
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Bold
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Italic
 
   # Italic font face
   #italic:
@@ -267,26 +267,26 @@ colors:
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+  normal:
+    black:   '#1d2021'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#83a598'
+    white:   '#ebdbb2'
 
   # Bright colors
   #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+    #black:   '#ffffff'
+    #red:     '#ffffff'
+    #green:   '#ffffff'
+    #yellow:  '#ffffff'
+    #blue:    '#ffffff'
+    #magenta: '#ffffff'
+    #cyan:    '#ffffff'
+    #white:   '#ffffff'
 
   # Dim colors
   #
@@ -357,6 +357,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
+# background_opacity: 0.85
 background_opacity: 1
 
 #selection:

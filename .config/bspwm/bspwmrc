@@ -13,6 +13,7 @@
 sxhkd &
 picom &
 nitrogen --restore &
+/usr/bin/emacs --daemon &
 sh ~/.config/polybar/launch.sh &
 timeout 0.8s lxappearance &
 

@@ -20,7 +20,7 @@ super + shift + b
 super + shift + s
   flameshot gui
 super + e
-  emacs
+  emacsclient -c -a 'emacs'
 super + Return
 	alacritty
 super + p
@@ -39,14 +39,18 @@ super + v
 super + Escape
 	pkill -USR1 -x sxhkd
 super + n
-  flatpak run net.cozic.joplin_desktop
+	alacritty -e nvim
+super + shift + n
+	neovide --multigrid
 
 
 # BSPWM HOTKEYS
 
-# quit/restart bspwm
-super + shift + {q,r}
-	bspc {quit,wm -r}
+super + shift + alt + q
+	bspc quit
+
+super + shift + q
+	xkill
 
 # Rotate
 super + o

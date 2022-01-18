@@ -17,12 +17,10 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #282828
 background-alt = #1d2021
-;foreground = ${xrdb:color7:#222}
 foreground = #ebdbb2
-foreground-alt = #ebdbb2
+foreground-alt = #a89984
 primary = #fb4934
 secondary = #fabd2f
 alert = #b8bb26
@@ -61,7 +59,7 @@ modules-right = pulseaudio memory cpu temperature date powermenu
 
 tray-position = center
 tray-padding = 3
-;tray-background = #700063ff
+tray-background = #282828
 
 ;wm-restack = bspwm
 ;wm-restack = i3
