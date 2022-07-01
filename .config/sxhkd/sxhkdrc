@@ -1,34 +1,15 @@
-#  ____ _____ 
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |  	http://www.youtube.com/c/DistroTube
-# | |_| || |  	http://www.gitlab.com/dwt1/ 
-# |____/ |_|  	
-#        
-# A customized sxhkdrc for the bspwm window manager.
-# https://github.com/baskerville/sxhkd
-# https://github.com/baskerville/bspwm
-
-
 bspc {desktop -f, node -d} focused:'+^{1-9,10}'
 
 
 # Run programs
 super + b
-	brave
-super + shift + b
-	pcmanfm
-super + shift + s
-  flameshot gui
-super + e
-  emacsclient -c -a 'emacs'
+    firefox
 super + Return
-	alacritty
+    alacritty
 super + p
-  rofi -show run
-super + w
-  rofi -show window
+     rofi -show run
 super + c
-  gnome-calculator
+     gnome-calculator
 
 super + m
   bspc node -g marked
@@ -36,12 +17,12 @@ super + v
   bspc node newest.marked.local -n newest.!automatic.local
 
 # make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-super + n
-	alacritty -e nvim
-super + shift + n
-	neovide --multigrid
+# super + Escape
+# 	pkill -USR1 -x sxhkd
+# super + n
+# 	alacritty -e nvim
+# super + shift + n
+# 	neovide --multigrid
 
 
 # BSPWM HOTKEYS
@@ -49,8 +30,8 @@ super + shift + n
 super + shift + alt + q
 	bspc quit
 
-super + shift + q
-	xkill
+# super + shift + q
+# 	xkill
 
 # Rotate
 super + o
@@ -65,12 +46,12 @@ super + q
 	bspc node -c
 
 # Audio control keys
-XF86AudioRaiseVolume
-  amixer -q sset Master 5%+
-XF86AudioLowerVolume
-  amixer -q sset Master 5%-
-XF86AudioMute
-  amixer -q sset Master 0%
+# XF86AudioRaiseVolume
+#   amixer -q sset Master 5%+
+# XF86AudioLowerVolume
+#   amixer -q sset Master 5%-
+# XF86AudioMute
+#   amixer -q sset Master 0%
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -103,5 +84,3 @@ super + alt + {h,j,k,l}
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
-
-
